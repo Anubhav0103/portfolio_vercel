@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fix for large text being cut off */
+.large-text-container {
+  background: transparent !important;
+  overflow: visible !important;
+  position: relative;
+  z-index: 50;
+}
+
+.large-text {
+  position: relative;
+  z-index: 100;
+  overflow: visible !important;
+  white-space: nowrap;
+  transform: translateZ(0);
+}
+
+/* Ensure text containers don't clip content */
+.text-section {
+  overflow: visible !important;
+  background: transparent !important;
+}
+
+/* Force text to be in foreground */
+.foreground-text {
+  position: relative;
+  z-index: 999;
+  pointer-events: auto;
+}
