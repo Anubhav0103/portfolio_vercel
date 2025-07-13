@@ -64,7 +64,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="relative flex flex-col items-center justify-center min-h-screen text-center overflow-hidden px-4 -mt-36">
+    <section id="hero" className="relative flex flex-col items-center justify-center min-h-screen text-center overflow-hidden px-4 -mt-28">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
