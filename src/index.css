@@ -2,18 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Set default zoom to 70% to match local development */
+/* Set smaller base font size to match 70% zoom effect */
 html {
-  font-size: 16px;
+  font-size: 11.2px; /* 16px * 0.7 = 11.2px */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  zoom: 0.7;
-  -moz-transform: scale(0.7);
-  -moz-transform-origin: 0 0;
 }
 
 body {
-  font-size: 16px;
+  font-size: 11.2px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
