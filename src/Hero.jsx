@@ -64,7 +64,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="relative flex flex-col items-center justify-center min-h-screen text-center overflow-hidden px-4 -mt-24">
+    <section id="hero" className="relative flex flex-col items-center justify-center min-h-screen text-center overflow-hidden px-4" style={{ marginTop: '-6rem' }}>
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -106,7 +106,7 @@ const Hero = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 flex flex-col items-center w-full pt-36">
+      <div className="relative z-10 flex flex-col items-center w-full" style={{ paddingTop: '6rem' }}>
       <motion.h1
           className="text-8xl md:text-9xl lg:text-[12rem] font-black tracking-tighter bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent leading-none mb-0 px-8 inline-block mx-auto select-none"
           initial={{ opacity: 0, y: -60 }}
