@@ -64,7 +64,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="relative flex flex-col items-center justify-center min-h-screen text-center overflow-hidden px-4 -mt-8">
+    <section id="hero" className="relative flex flex-col items-center justify-center min-h-screen text-center overflow-hidden px-4 -mt-36">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -106,9 +106,9 @@ const Hero = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 flex flex-col items-center w-full">
+      <div className="relative z-10 flex flex-col items-center w-full pt-32">
       <motion.h1
-          className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent leading-none mb-0 px-8 inline-block mx-auto select-none"
+          className="text-8xl md:text-9xl lg:text-[12rem] font-black tracking-tighter bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent leading-none mb-0 px-8 inline-block mx-auto select-none"
           initial={{ opacity: 0, y: -60 }}
         animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: 'easeOut' }}
@@ -117,7 +117,7 @@ const Hero = () => {
           ANUBHAV
       </motion.h1>
         <motion.h2
-          className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent mt-0 mb-12 px-8 inline-block mx-auto select-none"
+          className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent mt-0 mb-12 px-8 inline-block mx-auto select-none"
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, delay: 0.3, ease: 'easeOut' }}
