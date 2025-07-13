@@ -106,7 +106,7 @@ const Hero = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 flex flex-col items-center w-full pt-40 md:pt-36 lg:pt-36 xl:pt-36 2xl:pt-36">
+      <div className="relative z-10 flex flex-col items-center w-full pt-32 md:pt-32 lg:pt-32 xl:pt-32 2xl:pt-32">
       <motion.h1
           className="text-8xl md:text-9xl lg:text-[12rem] font-black tracking-tighter bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent leading-none mb-0 px-8 inline-block mx-auto select-none"
           initial={{ opacity: 0, y: -60 }}
