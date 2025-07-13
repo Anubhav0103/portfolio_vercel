@@ -64,11 +64,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section
-      id="hero"
-      className="relative flex flex-col items-center justify-center min-h-screen text-center overflow-hidden px-4"
-      style={{ marginTop: '-6rem' }}
-    >
+    <section id="hero" className="relative flex flex-col items-center justify-center min-h-screen text-center overflow-hidden px-4" style={{ marginTop: '-6rem' }}>
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -83,7 +79,7 @@ const Hero = () => {
             ease: "linear"
           }}
         />
-        <motion.div
+    <motion.div
           className="absolute top-40 right-10 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20"
           animate={{
             scale: [1.2, 1, 1.2],
@@ -95,7 +91,7 @@ const Hero = () => {
             ease: "linear"
           }}
         />
-        <motion.div
+    <motion.div
           className="absolute bottom-20 left-1/2 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20"
           animate={{
             scale: [1, 1.3, 1],
@@ -109,29 +105,19 @@ const Hero = () => {
         />
       </div>
 
-      {/* Main content - fixed position for mobile */}
-      <div
-        className="relative z-10 flex flex-col items-center w-full pt-24 md:pt-[6rem]"
-        style={{
-          position: 'absolute',
-          top: '4.5rem', // just below navbar (72px)
-          left: 0,
-          right: 0,
-          margin: '0 auto',
-          maxWidth: '100vw',
-        }}
-      >
-        <motion.h1
-          className="text-5xl xs:text-6xl sm:text-7xl md:text-8xl lg:text-9xl lg:text-[12rem] font-black tracking-tighter bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent leading-none mb-0 px-2 md:px-8 inline-block mx-auto select-none"
+      {/* Main content */}
+      <div className="relative z-10 flex flex-col items-center w-full" style={{ paddingTop: '6rem' }}>
+      <motion.h1
+          className="text-8xl md:text-9xl lg:text-[12rem] font-black tracking-tighter bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent leading-none mb-0 px-8 inline-block mx-auto select-none"
           initial={{ opacity: 0, y: -60 }}
-          animate={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: 'easeOut' }}
           style={{ display: 'inline-block' }}
-        >
+      >
           ANUBHAV
-        </motion.h1>
+      </motion.h1>
         <motion.h2
-          className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent mt-0 mb-12 px-2 md:px-8 inline-block mx-auto select-none"
+          className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent mt-0 mb-12 px-8 inline-block mx-auto select-none"
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, delay: 0.3, ease: 'easeOut' }}
