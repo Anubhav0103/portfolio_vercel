@@ -79,7 +79,7 @@ const Hero = () => {
             ease: "linear"
           }}
         />
-        <motion.div
+    <motion.div
           className="absolute top-40 right-10 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20"
           animate={{
             scale: [1.2, 1, 1.2],
@@ -91,7 +91,7 @@ const Hero = () => {
             ease: "linear"
           }}
         />
-        <motion.div
+    <motion.div
           className="absolute bottom-20 left-1/2 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20"
           animate={{
             scale: [1, 1.3, 1],
@@ -107,15 +107,15 @@ const Hero = () => {
 
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center w-full">
-        <motion.h1
+      <motion.h1
           className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent leading-none mb-0 px-8 inline-block mx-auto select-none"
           initial={{ opacity: 0, y: -60 }}
-          animate={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: 'easeOut' }}
           style={{ display: 'inline-block' }}
-        >
+      >
           ANUBHAV
-        </motion.h1>
+      </motion.h1>
         <motion.h2
           className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent mt-0 mb-12 px-8 inline-block mx-auto select-none"
           initial={{ opacity: 0, y: 60 }}
@@ -149,8 +149,8 @@ const Hero = () => {
 
         {/* Profile image and social links */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.5 }}
           className="flex flex-col items-center gap-8"
         >
@@ -224,9 +224,9 @@ const Hero = () => {
           <span className="text-sm font-medium">Scroll to explore</span>
           <FaArrowDown className="text-xl" />
         </motion.div>
-      </motion.div>
-    </section>
-  );
+    </motion.div>
+  </section>
+);
 };
 
 export default Hero; 
