@@ -196,7 +196,7 @@ const Hero = () => {
               Hire Me
             </a>
             <a
-              href="./src/assets/anubhav_pandey_resume.pdf"
+              href="./assets/anubhav_pandey_resume.pdf"
               download
               className="px-10 py-4 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-2xl font-bold shadow-lg hover:from-purple-500 hover:to-pink-500 transition-colors duration-300"
             >
