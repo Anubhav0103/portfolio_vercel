@@ -35,7 +35,12 @@ const Navbar = () => {
 
   const scrollToSection = id => {
     const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    if (el) {
+      const navbar = document.querySelector('nav') || document.querySelector('nav, .fixed.top-0');
+      const navbarHeight = navbar ? navbar.offsetHeight : 80; // fallback to 80px if not found
+      const y = el.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
     setIsMenuOpen(false); // Close menu after clicking
   };
 

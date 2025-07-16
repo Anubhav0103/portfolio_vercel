@@ -108,20 +108,20 @@ const Hero = () => {
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center w-full pt-32 md:pt-32 lg:pt-32 xl:pt-32 2xl:pt-32">
       <motion.h1
-          className="text-8xl md:text-9xl lg:text-[12rem] font-black tracking-tighter bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent leading-none mb-0 px-8 inline-block mx-auto select-none"
+          className="text-8xl md:text-9xl lg:text-[12rem] font-black tracking-tighter bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent leading-none mb-0 px-2 md:px-8 w-full mx-auto select-none md:inline-block"
           initial={{ opacity: 0, y: -60 }}
         animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: 'easeOut' }}
-          style={{ display: 'inline-block' }}
+          style={{ display: 'block' }}
       >
           ANUBHAV
       </motion.h1>
         <motion.h2
-          className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent mt-0 mb-12 px-8 inline-block mx-auto select-none"
+          className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent mt-0 mb-12 px-2 md:px-8 w-full mx-auto select-none md:inline-block"
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, delay: 0.3, ease: 'easeOut' }}
-          style={{ display: 'inline-block' }}
+          style={{ display: 'block' }}
         >
           PANDEY
         </motion.h2>
