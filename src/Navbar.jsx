@@ -39,8 +39,9 @@ const Navbar = () => {
       const navbar = document.querySelector('nav') || document.querySelector('nav, .fixed.top-0');
       const navbarHeight = navbar ? navbar.offsetHeight : 80; // fallback to 80px if not found
       const y = el.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
-      window.scrollTo({ top: y, behavior: 'smooth' });
+      window.scrollTo({ top: y + 60, behavior: 'smooth' });
     }
+    setActive(id); // Immediately update active section
     setIsMenuOpen(false); // Close menu after clicking
   };
 
