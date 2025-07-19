@@ -106,7 +106,10 @@ const Navbar = () => {
           {sections.map(sec => (
             <motion.button
               key={sec.id}
-              onClick={() => scrollToSection(sec.id)}
+              onClick={() => {
+                setIsMenuOpen(false);
+                setTimeout(() => scrollToSection(sec.id), 200);
+              }}
               whileTap={{ scale: 0.95 }}
               className={`text-lg font-semibold transition-all duration-300 px-6 py-3 text-left focus:outline-none ${
                 active === sec.id 
